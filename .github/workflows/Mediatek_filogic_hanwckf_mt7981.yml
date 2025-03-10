@@ -67,7 +67,7 @@ jobs:
         tag: ${{ env.FIRMWARE_TAG }}
         commit: master
         replacesArtifacts: true
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.ACCOUNTS_JSON }}
         artifacts: ${{ env.build_dir }}/rom/*
         body: |
           **This is OpenWrt Firmware for ${{ env.FIRMWARE_TAG }}**
