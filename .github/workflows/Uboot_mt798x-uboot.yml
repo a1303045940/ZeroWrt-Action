@@ -65,7 +65,7 @@ jobs:
         tag: U-Boot-mt798x
         commit: master
         replacesArtifacts: true
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.ACCOUNTS_JSON }}
         artifacts: |
           bl-mt798x/output/*
         body: |
